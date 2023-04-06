@@ -47,8 +47,8 @@ const context = await esbuild.context({
 			// if not specified, this plugin uses ESBuild.build outdir/outfile options as base path.
 			resolveFrom: 'cwd',
 			assets: {
-				from: ['manifest.json'],
-				to: [`${outPathPrefix}/manifest.json`],
+				from: ['./assets/*'],
+				to: [`${outPathPrefix}`],
 			},
 			watch: true,
 		})
